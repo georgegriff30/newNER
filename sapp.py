@@ -10,5 +10,5 @@ if x:
     prediction = pipe(x)
     print(prediction)
     for i in prediction:
-        list.append((i['word'], i['entity_group']))
+        list.append((i['word'], i['entity']))
     st.write(str(list))
