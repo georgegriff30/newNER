@@ -3,7 +3,7 @@ from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 
 st.title('NER model')
-pipe = pipeline("token-classification", model="george6/NER", tokenizer=AutoTokenizer.from_pretrained("bert-base-uncased"), aggregation_strategy="simple")
+pipe = pipeline("token-classification", model="george6/NER", tokenizer=AutoTokenizer.from_pretrained("bert-base-uncased"))
 x = st.text_input('Enter a custom message:', '')
 if x:
     list = []
