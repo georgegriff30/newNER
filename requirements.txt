@@ -1,0 +1,5 @@
+streamlit
+transformers
+torch
+protobuf~=3.19.0
+altair==4.0
